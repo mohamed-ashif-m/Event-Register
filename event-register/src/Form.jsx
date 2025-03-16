@@ -64,10 +64,10 @@ const Form = () => {
         <input className="input-in" type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
         
         <select className="select-in" name="session" value={formData.session} onChange={handleChange} required>
-          <option value="">Select a session</option>
-          <option value="Morning">Morning Session</option>
-          <option value="Afternoon">Afternoon Session</option>
-          <option value="Evening">Evening Session</option>
+          <option value="">Select a Event</option>
+          <option value="Paper Presentation">Paper Presentation</option>
+          <option value="Debugging">Debugging</option>
+          <option value="Photography">Photography</option>
         </select>
         
         <button type="submit" className="button-in btn-form">Register</button>
