@@ -1,0 +1,193 @@
+/* Forn Style */
+*{
+    background-color: #f4f4f4;
+  }
+.form-page {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh
+  }
+  
+  .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    margin:auto 0;
+  }
+  .contain-in{
+    height:430px;
+  }
+  .form-test {
+    width: 360px;
+    height:300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px auto auto auto;
+  }
+  .h2-in{
+    font-size: 30px;
+  }
+  .input-in, .select-in, .button-in {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 0px 7px 0px black;
+  }
+  
+  .btn-form {
+    background-color: blue;
+    border-radius: 80px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:100px;
+    margin:10px auto;
+  }
+  
+  .btn-hover:hover {
+    background-color: darkblue;
+  }
+  
+  .ul-in {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .li-in {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  .attendees-container {
+    background: url(./assets/collimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blacky{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    opacity: 0.7;
+  }
+  .attendees-heading {
+    font-size: 32px;
+    z-index: 3;
+    background: none;
+    width: max-content;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .attendees-heading:hover {
+    color: #0056b3;
+  }
+  
+  .attendees-list {
+    position: absolute;
+    top:35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: max-content;
+    text-align: left;
+    max-height: 170px; 
+    overflow-y: scroll;
+    border: 1px solid #ccc; 
+  }
+  .attendee{
+    background: none;
+    position: relative;
+    z-index: 4;
+  }
+  .greet,.greeti{
+    color: white;
+    z-index: 4;
+    background: none;
+  }
+  .greet{
+    font-size: 32px;
+  }
+  .greeti{
+    font-size: 24px;
+    padding:0 40px;
+  }
+  .attendees-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .attendees-list li:last-child {
+    border-bottom: none;
+  }
+  @media(width<650px){
+    .ul-in {
+      font-size: 14px;
+    }
+    .form-page{
+      flex-direction: column;
+    }
+    .attendees-container{
+      background: none;
+    }
+    .blacky,.greet,.greeti{
+      display: none;
+    }
+    .contain{
+      width:auto;
+      height: 490px;
+      padding-bottom: 0%;
+      margin: 0%;
+    }
+    .form-test{
+      width:300px;
+    }
+    .attendees-list{
+      top:30px;
+      margin-bottom: 50px;
+    }
+    .attendees-heading{
+      font-size: 26px;
+    }
+  }
+  @media(width<769px){
+    .attendees-heading{
+      font-size: 28px;
+    }
+    .contain{
+      width:auto;
+      height: 490px;
+      padding-bottom: 0%;
+      margin: 0%;
+    }
+    .greeti{
+      font-size: 18px;
+      padding:0 20px;
+    }
+    .form-test{
+      width:300px;
+    }
+  }
