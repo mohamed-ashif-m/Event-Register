@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import collimg from "./assets/collimg.jpg";
 import Form from "./Form";
 import "./App.css";
